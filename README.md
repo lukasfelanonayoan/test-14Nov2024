@@ -1,12 +1,17 @@
 # Project
 Java Spring Boot + MongoDB
 
+untuk code nya udah termasuk CRUD untuk 1 table.
+belum ada keamanan seperti data existing atau nama yang sama.
+untuk Authentication sudah coba ditambahkan namun untuk setting nya ada kesalahan jadi semua API harus pakai authentication. (Kasih "X-API-KEY : Baeldung" pada header)
+untuk unit test tidak saya terapkan.
+
 # Database Properties
 Connect to MongoAtlas Online : mongodb+srv://lukas:Test1234@cluster0.nat67.mongodb.net/
 
 # How To Test
 Perlu ditambahkan Header pada semua request API saat ini. (Ada keamanan Autentikasi)
-## Header
+## Header (Authentication)
 1. X-API-KEY : Baeldung
 
 # Documentation API
