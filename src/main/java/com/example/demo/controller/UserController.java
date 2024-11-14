@@ -57,7 +57,7 @@ public class UserController {
 			} else {
 				map.put("status", "Failed");
 				map.put("data", userData);
-				map.put("message", "Member not exist");
+				map.put("message", "User not exist");
 			}
 			return map;
 		} catch (Exception error) {
@@ -95,7 +95,7 @@ public class UserController {
 			dataEdit.setName(userData.getName());
 			dataEdit.setPassword(userData.getPassword());
 			map.put("status", "Success");
-			map.put("message", "Data member edited");
+			map.put("message", "Data user edited");
 			userRepo.save(dataEdit);
 
 			return map;
@@ -116,11 +116,11 @@ public class UserController {
 			if (data.isPresent()) {
 				User dataDelete = data.get();
 				map.put("status", "Success");
-				map.put("message", "Data member Deleted");
+				map.put("message", "Data user Deleted");
 				userRepo.delete(dataDelete);
 			} else {
 				map.put("status", "Failed");
-				map.put("message", "Data member not exist");
+				map.put("message", "Data user not exist");
 			}
 			return map;
 
